@@ -1,11 +1,11 @@
-import { Image, Text, View, Pressable } from "react-native";
+import { Image, Text, View, Pressable} from "react-native";
 import { styles } from "./styles";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 
 const imageSource = require("@/assets/images/header.jpg");
 
-export default function HEader({ title, back = false}) {
+export default function Header({ title, back = false }) {
     const router = useRouter();
 
     return (
@@ -24,7 +24,7 @@ export default function HEader({ title, back = false}) {
                     <Text style={styles.title}>{title}</Text>
                 </View>
                 <Text style={{ fontSize: 16 }}>
-                    {!back ? "Encontre seu pokémon favorito aqui." : "Aqui está o seu pokémon"}
+                    {!back ? "Encontre seu pokemon favorito aqui." : "Aqui está o seu pokemon"}
                 </Text>
             </View>
         </View>
